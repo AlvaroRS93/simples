@@ -9,7 +9,7 @@
       ></v-img>
     </div>
 
-    <div id="nav" class="d-flex justify-center">
+    <div id="nav" class="d-none d-md-flex justify-center">
       <v-app-bar
         class="d-flex justify-center primary"
         elevation="3"
@@ -35,10 +35,7 @@
           depressed
           @click="mudarTela('/servicos')"
           >Serviços</v-btn
-        >
-        <v-col cols="2" md="4" lg="8">
-          <v-icon large right class="d-flex justify-end">mdi-instagram</v-icon>
-        </v-col>
+        >        
       </v-app-bar>
     </div>
   </div>

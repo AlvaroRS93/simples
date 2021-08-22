@@ -1,7 +1,7 @@
 <template>
-  <v-col>
-    <div>
-      <v-card elevation="10">
+
+    <div class=" ma-3 d-flex justify-center">
+      <v-card width="600" height="" elevation="10">
         <v-col>
           <v-carousel cycle height="300" show-arrows-on-hover>
             <v-carousel-item
@@ -10,13 +10,13 @@
               reverse-transition="fade-transition"
               transition="fade-transition"
             >
-              <v-img :src="img.src" contain max-height="350"></v-img>
+              <v-img :src="img.src" contain max-width="500"></v-img>
             </v-carousel-item>
           </v-carousel>
         </v-col>
       </v-card>
     </div>
-  </v-col>
+  
 </template>
 <script>
 export default {
