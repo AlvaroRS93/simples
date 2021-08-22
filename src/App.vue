@@ -7,7 +7,12 @@
         <div id="app" class="">
           <router-view class="" />
 
-          <v-footer fixed dark id="rodape" class="mb-5 d-flex justify-center">
+          <v-footer
+            fixed
+            dark
+            id="rodape"
+            class="mb-5 d-none d-md-flex justify-center"
+          >
             <v-card
               width="1200"
               max-height="100"
@@ -36,10 +41,8 @@
         </div>
       </v-col>
 
-      <v-col class="" cols="2" align-self="center">
-        <div class="d-flex justify-center">
-          <carroussel></carroussel>
-        </div>
+      <v-col class="" cols="12" md="2" align-self="center">
+        <carroussel></carroussel>
       </v-col>
     </v-row>
   </v-app>
