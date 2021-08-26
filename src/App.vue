@@ -41,7 +41,7 @@
         </div>
       </v-col>
 
-      <v-col class="pa-0" cols="12" md="2" align-self="center">
+      <v-col class="d-none d-md-flex pa-0" cols="12" md="2" align-self="center">
         <carroussel></carroussel>
       </v-col>
     </v-row>
