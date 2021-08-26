@@ -1,10 +1,10 @@
 <template>
-  <div class="ma-3 d-flex justify-start">
-    <v-card class="primary" width="285" height="" elevation="10">
+  <div class="mr-3 d-flex justify-center">
+    <v-card class="primary" width="250" elevation="10">
       <v-card-text class="pb-0 font-weight-bold black--text text-h6" style="wordword-break: normal !important" >
         Também estamos no Instagram!        
       </v-card-text>
-      <v-col>
+      <v-col class="py-0">
         <v-carousel cycle height="250" show-arrows-on-hover hide-delimiters>
           <v-carousel-item
             v-for="(img, i) in imagens"
