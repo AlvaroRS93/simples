@@ -1,43 +1,18 @@
 <template>
   <v-app id="fundo">
-    <v-row>
+    <v-row id="linhaCabecalho">
+      <v-col>
+        <cabecalho></cabecalho>
+      </v-col>
+    </v-row>
+    <v-row id="linhaConteudo">
       <v-col cols="2" class="gren"> </v-col>
       <v-col cols="8">
-        <cabecalho></cabecalho>
+        
         <div id="app" class="">
           <router-view class="" />
 
-          <v-footer
-            fixed
-            dark
-            id="rodape"
-            class="mb-5 d-none d-md-flex justify-center"
-          >
-            <v-card
-              width="1200"
-              max-height="100"
-              elevation="10"
-              class="primary black--text text-center"
-            >
-              <v-card-text class="mt-n2">
-                <v-btn
-                  class="mx-2 black--text"
-                  icon
-                  href="https://www.instagram.com/alvarors_93/"
-                  target="_blank"
-                >
-                  <v-icon size="30px"> mdi-instagram </v-icon>
-                </v-btn>
-              </v-card-text>
-
-              <v-divider class="mx-5 mt-n2 grey"></v-divider>
-
-              <v-card-text class="mt-n2 black--text">
-                {{ new Date().getFullYear() }} —
-                <strong>Desenvolvido por Alvaro Rodrigues</strong>
-              </v-card-text>
-            </v-card>
-          </v-footer>
+          
         </div>
       </v-col>
 
@@ -45,16 +20,23 @@
         <carroussel></carroussel>
       </v-col>
     </v-row>
+    <v-row>
+      <v-col>
+        <rodape></rodape>
+      </v-col>
+    </v-row>
   </v-app>
 </template>
 <script>
 import Carroussel from "./components/carroussel.vue";
 import Cabecalho from "./components/Cabecalho.vue";
+import Rodape from "./components/Rodape.vue"
 
 export default {
   components: {
     carroussel: Carroussel,
     cabecalho: Cabecalho,
+    rodape: Rodape
   },
 };
 </script>
