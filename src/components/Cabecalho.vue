@@ -13,7 +13,7 @@
       <v-app-bar
         class="d-flex justify-center primary"
         elevation="3"
-        max-width="1200"
+        max-width="100%"
       >
         <v-btn class="primary black--text" depressed @click="mudarTela('/')"
           >Principal</v-btn
